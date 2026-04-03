@@ -42,7 +42,7 @@ box-shadow: 2px 2px 2px 2px rgb(58, 56, 56);
 /*website logo*/
 #website-logo{
 width:20%;
-max-width: 80%;
+max-width: 90%;
 margin-top: -95px;
 margin-bottom: -100px;
 }
@@ -69,7 +69,7 @@ margin-bottom: -100px;
 #login-btn::before{
   content: '';
   width:0;
-  height:3rem;
+  height:3.5rem;
   border-radius: 30rem;
   position: absolute;
   top:0;
