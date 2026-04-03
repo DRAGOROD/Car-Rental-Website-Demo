@@ -50,14 +50,15 @@ margin-bottom: -100px;
 /*login & signup buttons */
 
 #login-btn{
-  margin-top: 0.7rem;
-  width:9rem;
-  height:3rem;
+  margin-top: 0.8rem;
+  width:12rem;
+  height:4rem;
   border-radius: 30rem;
   border:none;
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  font-size: x-large;
   z-index: 1;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
