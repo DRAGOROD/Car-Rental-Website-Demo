@@ -20,7 +20,7 @@ function Hero({scrollToSearch}){
       <img src={Carimg} id="car-img"/>
       <div id="hero-heading">Rent<br/>Ride<br/>Repeat</div>
       <ul id="hero-details">
-        <h5>Rent The Car of Your Dreams:</h5>
+        <h5 id="hero-details-heading">Rent The Car of Your Dreams:</h5>
         <li>Affordable Price</li>
         <li>Unlimited Miles</li>
         <li>Flexable Pickup Option</li>
