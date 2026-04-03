@@ -457,7 +457,7 @@ input[type="checkbox"]+label{
 /*car models container*/
 #car-models-section{
   display:flex;
-  margin-left:3.3%;
+  margin-left:8%;
 }
 
 .names {
@@ -466,7 +466,7 @@ input[type="checkbox"]+label{
   padding:0.4rem;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-  font-size: larger;
+  font-size:x-large;
 }
 
 .names:hover{
