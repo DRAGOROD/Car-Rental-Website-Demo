@@ -46,7 +46,7 @@ return (
       ))}
     </div>
         <div id="contact-card" className="block-el">
-            <img src={Contacticon} alt="Contact Us Icon" id="contact-icon"/>
+            <img src={Contacticon} alt="Contact Us Icon" id="contact-icon" loading="lazy"/>
             <h3 id="contact-card-heading">Contact Operator</h3>
             <p id="contact-card-para">Have questions? Our friendly and expert Operators are here to help.</p>
             <div id="contact-card-btn">CONTACT</div>

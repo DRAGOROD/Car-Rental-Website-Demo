@@ -70,17 +70,17 @@ function Review(){
          <div id="review-container">
          <h3 id="review-heading" className="block-el">Client's <span id="polygon">Review</span></h3>
          <div id="star-container" className="block-el">
-            <img src={Staricon} alt="Star Icon" className="star-icon"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon"/>
+            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
+            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
+            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
+            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
+            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
          </div>
          <p id="review-para">Hear it from our clients: real experiences, real results, real satisfaction.</p>
          <div id="slider-container">
             {clientRatingLists.map((v,i)=>
             <div className="swiper-slid box block-el" key={i}>
-                <img className='client-image' src={v.image} alt="Client Image"/>
+                <img className='client-image' src={v.image} alt="Client Image" loading="lazy"/>
                 <p className="client-comment">{v.statement}</p>
                 <h5 className="client-name">{v.name}</h5>
                 <div className="client-rating">{v.ratings}</div>

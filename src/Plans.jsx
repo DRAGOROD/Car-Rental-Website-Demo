@@ -15,7 +15,7 @@ function Plans({scrollToContact}){
         </div>
     </div>
     <div id="about-container">
-      <img src={Aboutimg} alt="About Section Img" id="about-img" className="block-el"/>
+      <img src={Aboutimg} alt="About Section Img" id="about-img" className="block-el" loading="lazy"/>
       <div id="about-text-container">
         <div id="about-left-text">
           <h6 id="about-left-text-1" className="block-el">Why Choose us</h6>
@@ -25,17 +25,17 @@ function Plans({scrollToContact}){
         </div>
         <div id="about-right-cards">
           <div className="right-cards block-el" >
-          <img src={CCicon} alt="About Right Image 1" className="about-right-img"/>
+          <img src={CCicon} alt="About Right Image 1" className="about-right-img" loading="lazy"/>
           <h4 className="about-right-heading">Drive Across the Nation</h4>
           <p className="about-right-para">Take the road further with top-tier vehicles designed for unforgettable cross-country journeys.</p>
           </div>
           <div className="right-cards block-el">
-          <img src={NhFees} alt="About Right Image 1" className="about-right-img"/>
+          <img src={NhFees} alt="About Right Image 1" className="about-right-img" loading="lazy"/>
           <h4 className="about-right-heading">Zero Hidden Fees</h4>
           <p className="about-right-para">Enjoy complete peace of mind with transparent, upfront pricing no hidden fees, ever.</p>
           </div>
           <div className="right-cards block-el">
-          <img src={Supporticon} alt="About Right Image 1" className="about-right-img"/>
+          <img src={Supporticon} alt="About Right Image 1" className="about-right-img" loading="lazy"/>
           <h4 className="about-right-heading">Always There. Always Better.</h4>
           <p className="about-right-para">We're with you every step of the way from booking to drop-off, Our dedicated support ensures you're never left stranded</p>
           </div>
