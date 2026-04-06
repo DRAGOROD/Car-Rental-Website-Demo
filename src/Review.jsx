@@ -43,9 +43,9 @@ function Review(){
   },
   {
     image: "https://i.pravatar.cc/100?img=17",
-    statement: "“Car performance was excellent. Perfect for long drives with family.”",
+    statement: "“Car condition was excellent. Perfect for long drives with family.”",
     name: "Vikram Singh",
-    ratings: "⭐⭐⭐⭐⭐"
+    ratings: "⭐⭐⭐⭐"
   },
   {
     image: "https://i.pravatar.cc/100?img=18",
@@ -57,30 +57,30 @@ function Review(){
     image: "https://i.pravatar.cc/100?img=19",
     statement: "“Loved the quick verification and instant booking. Saved me a lot of time.”",
     name: "Aman Yadav",
-    ratings: "⭐⭐⭐⭐⭐"
+    ratings: "⭐⭐⭐⭐"
   },
   {
     image: "https://i.pravatar.cc/100?img=20",
-    statement: "“Good cars and reasonable rates. Will recommend to friends.”",
-    name: "Priya Chatterjee",
-    ratings: "⭐⭐⭐⭐"
+    statement: "“Good cars with low rates. Will refer to friends.”",
+    name: "Priya Roy",
+    ratings: "⭐⭐⭐"
   }
 ];
     return(
          <div id="review-container">
          <h3 id="review-heading" className="block-el">Client's <span id="polygon">Review</span></h3>
          <div id="star-container" className="block-el">
-            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
-            <img src={Staricon} alt="Star Icon" className="star-icon" loading="lazy"/>
+            <img src={Staricon} alt="Star Icon" className="star-icon" />
+            <img src={Staricon} alt="Star Icon" className="star-icon" />
+            <img src={Staricon} alt="Star Icon" className="star-icon" />
+            <img src={Staricon} alt="Star Icon" className="star-icon" />
+            <img src={Staricon} alt="Star Icon" className="star-icon" />
          </div>
          <p id="review-para">Hear it from our clients: real experiences, real results, real satisfaction.</p>
          <div id="slider-container">
             {clientRatingLists.map((v,i)=>
             <div className="swiper-slid box block-el" key={i}>
-                <img className='client-image' src={v.image} alt="Client Image" loading="lazy"/>
+                <img className='client-image' src={v.image} alt="Client Image"/>
                 <p className="client-comment">{v.statement}</p>
                 <h5 className="client-name">{v.name}</h5>
                 <div className="client-rating">{v.ratings}</div>

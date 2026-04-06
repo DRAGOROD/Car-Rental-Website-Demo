@@ -133,7 +133,6 @@ return (
           src={selectedCar.Image}
           id="carmodel-img"
           alt={selectedCar.Name}
-          loading="lazy"
         />
       </div>
 

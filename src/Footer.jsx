@@ -4,7 +4,7 @@ function Footer(){
 
 return (
     <div id="footer-container">
-        <div id="fColumn-1">
+        <div id="fColumn-1" className="block-el">
             <h3>CAR <span id="thin-text">Rental</span></h3>
             <p>We have the perfect car for your needs, get in touch with us today.</p>
             <address>
@@ -13,7 +13,7 @@ return (
                 <p>&#169; made by Joy Misra</p>
             </address>
             </div>
-            <div id="fColumn-2">
+            <div id="fColumn-2" className="block-el">
                 <h3>COMPANY</h3>
                <p><a>Delhi</a></p>
                 <p><a>Careers</a></p>
@@ -21,13 +21,13 @@ return (
                <p><a>Blog</a></p>
                <p><a>How We Work</a></p>
             </div>
-            <div id="fColumn-3">
+            <div id="fColumn-3" className="block-el">
                 <h3>Working Hours</h3>
                 <p>Mon-Fri 10:00AM-10:00PM</p>
                 <p>Sat: 9AM-8PM</p>
                 <p>Sun:Closed</p>
             </div>
-            <div id="fColumn-4">
+            <div id="fColumn-4" className="block-el">
                 <h3>SUBSCRIPTION</h3>
                 <p id="fc4-para">Subscribe with your email address<br/> for our latest News and Updates</p>
                 <input type="email" placeholder="Enter Email Here..."/>

@@ -22,7 +22,7 @@
 #nav-options{
   display:flex;
   justify-content: space-between;
-  font-size:x-large;
+  font-size:larger;
   gap:20px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: bolder;
@@ -43,22 +43,21 @@ box-shadow: 2px 2px 2px 2px rgb(58, 56, 56);
 #website-logo{
 width:20%;
 max-width: 90%;
-margin-top: -7rem;
+margin-top: -5.6rem;
 margin-bottom: -100px;
 }
 
 /*login & signup buttons */
 
 #login-btn{
-  margin-top: 0.8rem;
-  width:10.5rem;
-  height:3.5rem;
+  margin-top: 0.7rem;
+  width:8rem;
+  height:3rem;
   border-radius: 30rem;
   border:none;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  font-size:larger;
   z-index: 1;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
@@ -69,7 +68,7 @@ margin-bottom: -100px;
 #login-btn::before{
   content: '';
   width:0;
-  height:3.5rem;
+  height:3rem;
   border-radius: 30rem;
   position: absolute;
   top:0;
@@ -93,12 +92,12 @@ margin-bottom: -100px;
 
 /*Slider*/
 #hero-container{
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   width:160vh;
-  height:40rem;
+  height:30rem;
   position:absolute;
   top:15%;
-  left:21%;
+  left:22%;
   overflow:hidden;
   
   /*masking*/
@@ -180,10 +179,10 @@ margin-bottom: -100px;
 
 /*hero Heading*/
 #hero-heading{
-  margin-top: -27rem;
-  margin-left: 3rem;
+  margin-top: -23rem;
+  margin-left: 2.6rem;
   position: absolute;
-  font-size:7rem;
+  font-size:6rem;
   font-weight: bolder;
   background: linear-gradient(orange,orangered,red);
   -webkit-background-clip: text;
@@ -205,9 +204,9 @@ margin-bottom: -100px;
 
 
 #hero-details{
-  max-width: 95%;
-  margin-top: 30rem;
-  margin-left: 50px;
+  max-width: 50%;
+  margin-top: 24rem;
+  margin-left: 3.1rem;
   color:rgb(88, 87, 87);
   font-size: large;
   animation:fade-in 0.8s linear 1 alternate;
@@ -226,8 +225,8 @@ margin-bottom: -100px;
 #hero-cta-btn{
   margin-top: 2rem;
   margin-left: 75px;
-  width:8rem;
-  height:4rem;
+  width:7rem;
+  height:3rem;
   border-radius:1.5em;
   font-weight: 500;
   color:rgb(247, 87, 29);
@@ -236,7 +235,7 @@ margin-bottom: -100px;
   border-style: none;
   box-shadow: 6px 6px 8px #c5c5c5,
   -6px -6px 8px #ffffff;
-  font-size: larger;
+  font-size:medium;
 }
 
 #hero-cta-btn:hover{
@@ -261,7 +260,7 @@ margin-bottom: -100px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bolder;
   font-size: x-large;
-  margin-top:14rem;
+  margin-top:12rem;
   margin-left: 42%;
   max-width: 30%;
   color:rgb(58, 56, 56);
@@ -443,13 +442,13 @@ input[type="checkbox"]+label{
   margin-left: 41%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 #car-models-para{
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   margin-bottom: 3rem;
-  margin-left: 30%;
+  margin-left: 27%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color:rgb(95, 94, 94);
 }
@@ -458,16 +457,15 @@ input[type="checkbox"]+label{
 /*car models container*/
 #car-models-section{
   display:flex;
-  margin-left:6%;
+  margin-left:5%;
 }
 
 .names {
   cursor: pointer;
-  margin-right: 9.5rem;
+  margin-right: 3.5rem;
   padding:0.4rem;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-  font-size:x-large;
 }
 
 .names:hover{
@@ -481,14 +479,19 @@ background-color: rgb(194, 178, 172);
   border-radius: 2rem;
 }
 
+/*car Image*/
+#carmodel-img{
+  margin-left: 1.3rem;
+}
+
 
 /*Car Detail Tables*/
 
 #table-container{
-  margin-left:12rem;
+  margin-left:8rem;
   text-align: center;
-  width:21rem;
-  height:10rem;
+  width:16rem;
+  height:4rem;
 }
 
 #car-table{
@@ -501,7 +504,6 @@ background-color: rgb(194, 178, 172);
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
   color:white;
-  font-size: large;
   background-color: rgb(233, 48, 2);
   width:1.5rem;
   height:0.7rem;
@@ -517,7 +519,6 @@ background-color: rgb(194, 178, 172);
 
 .car-details-heading{
   width:50%;
-  font-size: large;
   height:2rem;
   border-right: 0.1rem solid rgb(182, 179, 179);
 
@@ -542,7 +543,7 @@ background-color: rgb(194, 178, 172);
   height:3rem;
   background-color: rgb(233, 48, 2) ;
   color:white;
-  font-size: x-large;
+  font-size: large;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   display:flex;
@@ -809,7 +810,7 @@ cursor:vertical-text;
 
 #contact-container{
   margin-top: 11rem;
-  width:92.5%;
+  width:91.5%;
   display:flex;
   margin-left: 7rem;
 }
