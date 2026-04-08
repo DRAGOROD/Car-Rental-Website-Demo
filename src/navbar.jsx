@@ -6,8 +6,9 @@ import Plans from './Plans';
 import Review from './Review';
 import Contact from './Contact';
 import Searchbox from './Booking-Search-box.jsx'
+import { IoMdMenu } from "react-icons/io";
 
-import { useRef } from 'react';
+import { useRef,useState } from 'react';
 
 function navbar(){
 
@@ -26,12 +27,19 @@ function ScrollToSearch(){
   searchRef.current.scrollIntoView({ behavior: "smooth" })
 }
 
+let [showMenu,setShowMenu]=useState(false)
+
+function handleShowMenu(){
+ setShowMenu(!showMenu)
+}
+
+
 return (
     <div>
 <div id="nav-container">
     <img src={CarRentalLogo} alt="Website Car Logo" id="website-logo"/>
     <nav>
-        <ul id="nav-options">
+        <ul  className={showMenu?"ph-menu":"web-menu"}>
             <li className="options"><a onClick={()=>heroRef.current.scrollIntoView({behavior: "smooth"})}>Home</a></li>
             <li className="options"><a onClick={()=>aboutRef.current.scrollIntoView({behavior: "smooth"})}>About</a></li>
             <li className="options"><a onClick={()=>carModelRef.current.scrollIntoView({behavior: "smooth"})}>Car Models</a></li>
@@ -39,6 +47,9 @@ return (
             <li className="options"><a onClick={()=>contactRef.current.scrollIntoView({behavior: "smooth"})}>Contact</a></li>
         </ul>
     </nav>
+    <div id="ham-menu" onClick={handleShowMenu}>
+      <IoMdMenu />
+    </div>
     <button id="login-btn">LOGIN / SIGNUP</button>
 </div>
   <div ref={heroRef}>

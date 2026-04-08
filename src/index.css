@@ -1,4 +1,4 @@
-*{
+ *{
   margin:0;
  padding:0;
 }
@@ -19,11 +19,11 @@
 
   /*nav options*/
 
-#nav-options{
-  display:flex;
-  justify-content: space-between;
-  font-size:larger;
-  gap:20px;
+.web-menu{
+display:flex;
+justify-content: space-between;
+font-size:larger;
+gap:20px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: bolder;
 margin-left: -150px;
@@ -34,6 +34,9 @@ padding-top: 20px;
   padding:5px;
 }
 
+#ham-menu{
+  display: none;
+}
 .options:hover{
 border-radius:5px ;
 cursor: pointer;
@@ -464,6 +467,7 @@ input[type="checkbox"]+label{
   cursor: pointer;
   margin-right: 3.5rem;
   padding:0.4rem;
+  font-size: larger;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
 }
@@ -1128,7 +1132,7 @@ animation-range: entry 0 cover 30%;
 
 /*Responsive*/
 
-@media (max-width: 768px) {
+@media (max-width: 1029px) and (min-width:800px) {
   * {
     box-sizing: border-box;
   }
@@ -1139,7 +1143,7 @@ animation-range: entry 0 cover 30%;
 
   /* =================== NAVBAR =================== */
   #nav-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-right: 0;
     padding: 0.5rem 1rem 1rem;
@@ -1149,27 +1153,51 @@ animation-range: entry 0 cover 30%;
   #website-logo {
     width: 60%;
     max-width: 260px;
-    margin-top: -6rem;
+    margin-top: -5rem;
     margin-bottom: -6rem;
   }
 
-  #nav-options {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-left: 0;
-    padding-top: 0;
-    font-size: 1rem;
+  .web-menu {
+display:none;
+  }
+
+  .ph-menu{
+    position: absolute;
+    top:4rem;
+    z-index: 999;
+    left:45%;
+    background-color: #c5c5c538;
+    backdrop-filter: blur(10px);
+    font-size:larger;
+gap:20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bolder;
+  }
+
+  .ph-menu li{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #ham-menu{
+display: inline-block;
+color:purple;
+font-size: xxx-large;
+cursor: pointer;
+margin-right: auto;
+margin-left: auto;
   }
 
   .options {
     padding: 0.4rem 0.7rem;
+    display:none;
   }
 
   #login-btn {
     width: 100%;
     max-width: 220px;
-    margin-top: 0.2rem;
+    margin-top: -0.3rem;
   }
 
   /* =================== HERO =================== */
@@ -1179,7 +1207,7 @@ animation-range: entry 0 cover 30%;
     height: auto;
     margin-top: 1rem;
     overflow: hidden;
-    margin-left: 12rem;
+    margin-left: 25%;
   }
 
   #hero-wrapper {
@@ -1194,26 +1222,25 @@ animation-range: entry 0 cover 30%;
 
   #car-img {
     position: absolute;
-    width: 65%;
+    width: 55%;
     top:20rem;
-    left:14rem;
+    left:35%;
   }
 
   #hero-heading {
     position: absolute;
-    top:37rem;
-    left:-1.5rem;
-    font-size: 4rem;
+    top:32rem;
+    font-size: 5rem;
     line-height: 1.1;
     text-align: center;
+    text-align: left;
   }
 
   #hero-details {
-    margin-top: -5rem;
-    margin-left: 1.8rem;
+    margin-top: -8.5rem;
+    margin-left:4.8rem;
     max-width: 40%;
-    text-align: left;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 /*CTA button noshow*/
   #hero-cta-btn {
@@ -1511,6 +1538,554 @@ animation-range: entry 0 cover 30%;
     flex-direction: column;
     gap: 2rem;
     margin: 3rem 0 0;
+    padding: 0 1rem 2rem;
+    text-align: center;
+  }
+
+  #fColumn-4 input {
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+
+  #submit-btn {
+    width: 100%;
+    padding: 0.7rem 0;
+  }
+
+  address{
+    flex-direction: column;
+  }
+}
+
+
+/*Scroll Animation*/
+
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.block-el{
+animation:appear linear;
+animation-timeline: view();
+animation-range: entry 0 cover 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 799px) and (min-width:320px) {
+  * {
+    box-sizing: border-box;
+
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* =================== NAVBAR =================== */
+  #nav-container {
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  #website-logo {
+    width: 60%;
+    margin-top: -6rem;
+    margin-left: -1.7rem;
+  }
+
+
+
+
+  .web-menu {
+display:none;
+  }
+
+  .ph-menu{
+    position: absolute;
+    top:3rem;
+    z-index: 999;
+    left:37%;
+    background-color: #c5c5c538;
+    backdrop-filter: blur(10px);
+    font-size:larger;
+    gap:20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bolder;
+  }
+
+  .ph-menu li{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #ham-menu{
+display: inline-block;
+color:purple;
+font-size: xx-large;
+cursor: pointer;
+margin-right: 4rem;
+  }
+
+
+  .options {
+    padding: 0.4rem 0.7rem;
+  }
+
+  #login-btn {
+    width: 100%;
+    max-width: 5rem;
+    height:2.2rem;
+    font-size:x-small;
+    margin-top: -0.3rem;
+    margin-right: -6rem;
+  }
+
+  /* =================== HERO =================== */
+  #hero-container {
+    position: static;
+    width: 85%;
+    height: auto;
+    margin-top: 1rem;
+    overflow: hidden;
+    margin-left: 7.5rem;
+  }
+
+  #hero-wrapper {
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  #car-img {
+    position: absolute;
+    width: 80%;
+    top:9.2rem;
+    left:8.5rem;
+  }
+
+  #hero-heading {
+    position: absolute;
+    top:28.5rem;
+    left:-0.7rem;
+    font-size: 2.1rem;
+    text-align: left;
+  }
+
+  #hero-details {
+    margin-top: -3.5rem;
+    margin-left: 1.5rem;
+    max-width: 40%;
+    text-align: left;
+    font-size: 0.4rem;
+  }
+/*CTA button noshow*/
+  #hero-cta-btn {
+  display:none;
+  }
+
+  /* =================== BOOKING =================== */
+  #booking-heading {
+    margin-top:8rem;
+    font-size: medium;
+    text-align: center;
+    margin-left: 50%;
+  }
+
+  #booking-container {
+    width: 100%;
+    height: 35rem;
+    
+    margin-right:-15rem;
+    padding:1rem;
+    text-align: center;
+  }
+
+  #booking-form {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  #pickup-select,
+  #dropoff-select,
+  .pickup-dateIn,
+  .pickup-timeIn,
+  .dropoff-dateIn,
+  .dropoff-timeIn {
+    width: 100%;
+    border-radius: 0.7rem;
+  }
+
+  hr,
+  hr[id="highpen"] {
+    display: none;
+  }
+
+  #search-btn {
+    width: 100%;
+    height: 3rem;
+    margin-left: 0;
+  }
+
+  #dropoff-enable-option {
+    margin-top: 2rem;
+    margin-left:28%;
+    margin-right: auto;
+    display: inline-block;
+  }
+
+  #no-result-img {
+    width: 100%;
+    margin-left:2rem;
+    margin-right: auto;
+    margin-top: -7rem;
+   
+  }
+
+  /* =================== CAR MODELS =================== */
+  #car-models-heading {
+    margin: 6rem 0 1rem 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    width:90%;
+  }
+
+  #car-models-para {
+    margin: 0 -1.5rem 2rem 3.5rem;
+    text-align: center;
+  }
+
+  #car-models-section {
+    margin-left: 3.5rem;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  #car-names {
+    margin-left: -5rem;
+    margin-right: -5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  .names {
+    margin-right: 0;
+    font-size: 1rem;
+  }
+
+  #carimg-container {
+    text-align: center;
+  }
+
+  #carmodel-img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+  }
+
+  #table-container {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  #car-table {
+    width: 100%;
+  }
+
+  #rate {
+    font-size: 2rem;
+  }
+
+  /* =================== ABOUT(Plan Section) =================== */
+  #black-label {
+    margin-top: -4rem;
+    margin-left: .1rem;
+  
+    text-align: center;
+    font-size: 1.2rem;
+    width:121.5%;
+  }
+
+  #black-label-heading {
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
+  #black-label-para {
+    margin-left: 0;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+  }
+
+  #about-img {
+    width: 100%;
+    margin-left: 2.3rem;
+    margin-top: 1rem;
+  }
+
+  #about-text-container {
+    text-align: center;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-left: 4rem;
+  }
+
+  #about-left-text,
+  #about-right-cards {
+    margin: 0;
+  }
+
+  #about-left-text-2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  #find-details-btn {
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .right-cards {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .about-right-img {
+    display: block;
+    width: 90px;
+    margin: 0 auto 0.8rem;
+  }
+
+  /* =================== REVIEW =================== */
+  #review-container {
+    margin-left:2rem;
+    margin-top: 4rem;
+    padding: 0 1rem;
+  }
+
+  #review-heading {
+    margin-left: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #star-container {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .star-icon {
+    width: 24px;
+  }
+
+  #review-para {
+    margin: 1rem 0 2rem;
+    text-align: center;
+  }
+
+  #slider-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .box {
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+  }
+
+  /* =================== CONTACT =================== */
+  #contact-container {
+    margin-top: 5rem;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  #faq-container,
+  #contact-card {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  #faq-heading {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .faq-question {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.9rem;
+  }
+
+  .faq-answer {
+    padding: 0.9rem 0.2rem 1rem;
+  }
+
+  #contact-icon {
+    width: 55%;
+    max-width: 220px;
+  }
+
+  #contact-card-btn {
+    margin: 1rem auto 0;
+  }
+
+  /* =================== PHONE APP =================== */
+  #phoneapp-container {
+    margin-left: 2rem;
+    margin-top: 5rem;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  #phoneapp-left-section,
+  #phoneapp-right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  #phoneapp-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #phoneapp-para {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #carapp-img {
+    width: 100%;
+  }
+
+  .store-btn {
+    width: 45%;
+    margin-left: 0;
+  }
+
+  #phoneapp-left-section > div {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  /* =================== FOOTER =================== */
+  #footer-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem;
+    margin-left: 2rem;
     padding: 0 1rem 2rem;
     text-align: center;
   }
