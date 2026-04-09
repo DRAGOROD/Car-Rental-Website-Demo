@@ -1132,7 +1132,7 @@ animation-range: entry 0 cover 30%;
 
 /*Responsive*/
 
-@media (max-width: 1029px) and (min-width:800px) {
+@media (max-width: 1029px) and (min-width:800px){ 
   * {
     box-sizing: border-box;
   }
@@ -1656,88 +1656,80 @@ animation-range: entry 0 cover 20%;
 
 
 
-
 @media (max-width: 799px) and (min-width:320px) {
-  * {
+  *{
+    width:100%;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-
   }
 
-  body {
-    overflow-x: hidden;
-  }
-
-  /* =================== NAVBAR =================== */
+ /* =================== NAVBAR =================== */
   #nav-container {
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 1rem 1rem;
-    gap: 0.8rem;
-    margin-top: 0.5rem;
+    justify-content: space-between;
   }
 
   #website-logo {
-    width: 60%;
-    margin-top: -6rem;
-    margin-left: -1.7rem;
+    width: 45%;
+    margin-top: -4rem;
+    margin-left: -0.5rem;
   }
-
-
-
-
   .web-menu {
 display:none;
   }
 
   .ph-menu{
+    width: 8rem;
     position: absolute;
-    top:3rem;
+    top:4rem;
     z-index: 999;
-    left:40%;
+    left:32%;
     background-color: #c5c5c538;
     backdrop-filter: blur(10px);
-    font-size:larger;
+    font-size:medium;
     gap:20px;
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-weight: bolder;
+   text-align: center;
   }
 
   .ph-menu li{
     display:flex;
     flex-direction: column;
-    align-items: center;
+
   }
 
   #ham-menu{
 display: inline-block;
 color:purple;
-font-size: xx-large;
+font-size: x-large;
 cursor: pointer;
-margin-right: 4rem;
+margin-left:-9rem;
+margin-top: 1.8rem;
   }
 
 
-  .options {
-    padding: 0.4rem 0.7rem;
-  }
+  
 
   #login-btn {
-    width: 100%;
-    max-width: 5rem;
-    height:2.2rem;
-    font-size:x-small;
-    margin-top: -0.3rem;
-    margin-right: -6rem;
+    margin-top: 1.3rem;
+    margin-right: 0.7rem;
+    
+   height:2.4rem;
+   width:15rem;
+   font-size: x-small;
   }
 
-  /* =================== HERO =================== */
+/* =================== HERO =================== */
   #hero-container {
     position: static;
-    width: 85%;
+    width: 75%;
     height: auto;
     margin-top: 1rem;
     overflow: hidden;
-    margin-left: 7.5rem;
+    margin-left: 4.5rem;
   }
 
   #hero-wrapper {
@@ -1752,53 +1744,50 @@ margin-right: 4rem;
 
   #car-img {
     position: absolute;
-    width: 80%;
-    top:9.2rem;
-    left:8.5rem;
+    width: 65%;
+    top:8rem;
+    left:6rem;
   }
 
   #hero-heading {
     position: absolute;
-    top:28.5rem;
-    left:-0.7rem;
-    font-size: 2.1rem;
+    top:28rem;
+    left:-2.1rem;
+    font-size: 1.6rem;
     text-align: left;
+    width:60%;
   }
 
   #hero-details {
-    margin-top: -3.5rem;
-    margin-left: 1.5rem;
-    max-width: 40%;
+    margin-top: -3rem;
+    margin-left: 0.2rem;
     text-align: left;
-    font-size: 0.4rem;
+    
+    font-size: 0.25rem;
   }
 /*CTA button noshow*/
   #hero-cta-btn {
   display:none;
   }
 
-  /* =================== BOOKING =================== */
+
+/* =================== BOOKING =================== */
   #booking-heading {
-    margin-top:8rem;
+    margin-top: 4rem;
     font-size: medium;
-    text-align: center;
-    margin-left: 50%;
+   margin-left: 7.5rem;
   }
 
   #booking-container {
-    width: 100%;
+    width:80%;
     height: 35rem;
-    
-    margin-right:-15rem;
+    margin-left: 2rem;
     padding:1rem;
-    text-align: center;
   }
 
   #booking-form {
     flex-direction: column;
     gap: 0.8rem;
-    align-items: stretch;
-    text-align: center;
   }
 
   #pickup-select,
@@ -1823,86 +1812,27 @@ margin-right: 4rem;
   }
 
   #dropoff-enable-option {
-    margin-top: 2rem;
-    margin-left:28%;
-    margin-right: auto;
-    display: inline-block;
+    margin:auto;
+    margin-top: 1rem;
+    margin-left:3rem;
+    width:5%;
   }
 
   #no-result-img {
-    width: 100%;
+    width: 80%;
     margin-left:2rem;
     margin-right: auto;
-    margin-top: -7rem;
+    margin-top: 2rem;
    
   }
 
-  /* =================== CAR MODELS =================== */
-  #car-models-heading {
-    margin: 6rem 0 1rem 3.5rem;
-    text-align: center;
-    font-size: 2rem;
-    width:90%;
-  }
-
-  #car-models-para {
-    margin: 0 -1.5rem 2rem 3.5rem;
-    text-align: center;
-  }
-
-  #car-models-section {
-    margin-left: 3.5rem;
-    flex-direction: column;
-    padding: 0 1rem;
-    gap: 1.5rem;
-  }
-
-  #car-names {
-    margin-left: -5rem;
-    margin-right: -5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    justify-content: center;
-  }
-
-  .names {
-    margin-right: 0;
-    font-size: 1rem;
-  }
-
-  #carimg-container {
-    text-align: center;
-  }
-
-  #carmodel-img {
-    width: 100%;
-    max-width: 25rem;
-    height: auto;
-  }
-
-  #table-container {
-    width: 100%;
-    margin-left: 0;
-    height: auto;
-  }
-
-  #car-table {
-    width: 100%;
-  }
-
-  #rate {
-    font-size: 2rem;
-  }
 
   /* =================== ABOUT(Plan Section) =================== */
   #black-label {
-    margin-top: -4rem;
-    margin-left: .1rem;
-  
+    margin-top: 4rem;
     text-align: center;
     font-size: 1.2rem;
-    width:121.5%;
+    width:100%;
   }
 
   #black-label-heading {
@@ -1917,8 +1847,8 @@ margin-right: 4rem;
   }
 
   #about-img {
-    width: 100%;
-    margin-left: 2.3rem;
+    width: 95%;
+    margin-left: 0.5rem;
     margin-top: 1rem;
   }
 
@@ -1927,8 +1857,6 @@ margin-right: 4rem;
     margin-top: 1.5rem;
     flex-direction: column;
     gap: 2rem;
-    padding: 0 1rem;
-    margin-left: 4rem;
   }
 
   #about-left-text,
@@ -1942,7 +1870,7 @@ margin-right: 4rem;
   }
 
   #find-details-btn {
-    margin-left: 3.5rem;
+    margin-left: 6rem;
     margin-bottom: 1rem;
   }
 
@@ -1959,11 +1887,78 @@ margin-right: 4rem;
     margin: 0 auto 0.8rem;
   }
 
-  /* =================== REVIEW =================== */
+  
+/* =================== CAR MODELS =================== */
+  #car-models-heading {
+   margin-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 2rem;
+    width:80%;
+  }
+
+  #car-models-para {
+    width:80%;
+    margin-left: 2rem;
+    text-align: center;
+  }
+
+  #car-models-section {
+    margin-top: -1rem;
+   width:80%;
+   margin-left: 2rem;
+  flex-direction: column;
+  
+  }
+
+  #car-names {
+   text-align: center;
+    display:flex;
+    text-align: center;
+    width: 80%;
+    gap:2px;
+    flex-wrap: wrap;
+    margin-left: 2.5rem;
+  }
+
+  .names {
+    width: 41%;
+    margin-right:0;
+    font-size:x-small;
+  }
+
+  #carimg-container {
+   margin-left:-0.5rem;
+  }
+
+  #carmodel-img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+  }
+
+  #table-container {
+    width: 80%;
+    margin-left: 1.5rem;
+  
+  }
+
+  #car-table {
+    width: 100%;
+    font-size: smaller;
+  }
+
+  #rate {
+    font-size: 2rem;
+  }
+
+
+ /* =================== REVIEW =================== */
   #review-container {
-    margin-left:2rem;
-    margin-top: 4rem;
-    padding: 0 1rem;
+
+    margin-top: 20rem;
+    width:90%;
+    margin-left: 1rem;
   }
 
   #review-heading {
@@ -1997,13 +1992,14 @@ margin-right: 4rem;
     border-radius: 1.5rem;
   }
 
-  /* =================== CONTACT =================== */
+
+ /* =================== CONTACT =================== */
   #contact-container {
-    margin-top: 5rem;
-    width: 100%;
+    margin-top: 4rem;
+    width: 90%;
     flex-direction: column;
-    margin-left: 2rem;
-    padding: 0 1rem;
+    margin-left: 1rem;
+
     gap: 2rem;
   }
 
@@ -2039,12 +2035,13 @@ margin-right: 4rem;
     margin: 1rem auto 0;
   }
 
-  /* =================== PHONE APP =================== */
+
+ /* =================== PHONE APP =================== */
   #phoneapp-container {
-    margin-left: 2rem;
-    margin-top: 5rem;
+    width:90%;
+    margin-left: 1rem;
+    margin-top: 4rem;
     flex-direction: column;
-    padding: 0 1rem;
   }
 
   #phoneapp-left-section,
@@ -2079,14 +2076,13 @@ margin-right: 4rem;
     flex-wrap: wrap;
   }
 
-  /* =================== FOOTER =================== */
+/* =================== FOOTER =================== */
   #footer-container {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     gap: 2rem;
     margin: 1rem;
-    margin-left: 2rem;
-    padding: 0 1rem 2rem;
+    margin-left: 1rem;
     text-align: center;
   }
 
@@ -2103,24 +2099,5 @@ margin-right: 4rem;
   address{
     flex-direction: column;
   }
-}
 
-
-/*Scroll Animation*/
-
-@keyframes appear{
-  from{
-    opacity: 0;
-    scale: 0.5;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-.block-el{
-animation:appear linear;
-animation-timeline: view();
-animation-range: entry 0 cover 20%;
 }
