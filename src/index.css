@@ -1706,7 +1706,7 @@ display: inline-block;
 color:purple;
 font-size: x-large;
 cursor: pointer;
-margin-left:-9rem;
+margin-left:-13rem;
 margin-top: 1.8rem;
   }
 
@@ -1744,14 +1744,14 @@ margin-top: 1.8rem;
 
   #car-img {
     position: absolute;
-    width: 65%;
-    top:8rem;
-    left:6rem;
+    width: 70%;
+    top:9.1rem;
+    left:5.7rem;
   }
 
   #hero-heading {
     position: absolute;
-    top:28rem;
+    top:30.5rem;
     left:-2.1rem;
     font-size: 1.6rem;
     text-align: left;
@@ -1775,13 +1775,13 @@ margin-top: 1.8rem;
   #booking-heading {
     margin-top: 4rem;
     font-size: medium;
-   margin-left: 7.5rem;
+   margin-left: 9.4rem;
   }
 
   #booking-container {
     width:80%;
     height: 35rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     padding:1rem;
   }
 
@@ -1814,8 +1814,9 @@ margin-top: 1.8rem;
   #dropoff-enable-option {
     margin:auto;
     margin-top: 1rem;
-    margin-left:3rem;
+    margin-left:6rem;
     width:5%;
+    box-shadow:none;
   }
 
   #no-result-img {
@@ -1870,7 +1871,7 @@ margin-top: 1.8rem;
   }
 
   #find-details-btn {
-    margin-left: 6rem;
+    margin-left: 9.3rem;
     margin-bottom: 1rem;
   }
 
@@ -1918,7 +1919,7 @@ margin-top: 1.8rem;
     width: 80%;
     gap:2px;
     flex-wrap: wrap;
-    margin-left: 2.5rem;
+    margin-left: 3.8rem;
   }
 
   .names {
@@ -1939,7 +1940,7 @@ margin-top: 1.8rem;
 
   #table-container {
     width: 80%;
-    margin-left: 1.5rem;
+    margin-left: 2.8rem;
   
   }
 

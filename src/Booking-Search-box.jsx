@@ -46,8 +46,8 @@ const [elNoResult, setElNoResult]=useState(false);
            <select id="pickup-select" required>
              {address.map((v,i)=><option key={i} id="pickup-option">{v}</option>)}
            </select><hr/>
-           <input type="date" name="pickup-date" className="pickup-dateIn"/>
-           <input type="time" name="pickup-time" className="pickup-timeIn"/>
+           <input type="date" name="pickup-date" className="pickup-dateIn" placeholder="Select Pickup Date"/>
+           <input type="time" name="pickup-time" className="pickup-timeIn" placeholder="Select Pickup Time"/>
             <hr id="highpen"/>
              {showDropoff && (
             <>
@@ -58,8 +58,8 @@ const [elNoResult, setElNoResult]=useState(false);
             </>
         )}
             <hr hidden/>
-           <input type="date" name="dropoff-dateIn"  className="dropoff-dateIn"/>
-           <input type="time" name="dropoff-timeIn"  className="dropoff-timeIn"/>
+           <input type="date" name="dropoff-dateIn"  className="dropoff-dateIn" placeholder="Select Dropoff Date"/>
+           <input type="time" name="dropoff-timeIn"  className="dropoff-timeIn" placeholder="Select Dropoff Time"/>
            <div type="search" id="search-btn" onClick={(x)=>setElNoResult(x.target)}>
             <svg width="40" height="40" fill="white" class="bi bi-search" viewBox="-11 -11 40 40">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
