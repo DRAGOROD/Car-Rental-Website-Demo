@@ -1,6 +1,6 @@
 Here's a modern **Car Rental Website** built using React. This project allows users to explore different car models, view pricing details, read customer reviews, and navigate smoothly across sections. The goal was to create a visually appealing and user-friendly interface similar to real-world rental platforms.
 
-**⭐Project Link:-** https://DRAGOROD.github.io/Car-Rental-Website-Prototype/
+**⭐Project Link:-** https://dragorod.github.io/Car-Rental-Website-Demo/
 
 ![image alt](https://github.com/DRAGOROD/Car-Rental-Website-Demo/blob/870ec8b2452ad1a0a7d3d31d5076d9ab36543e35/Car%20Rental%20Website%20GIF.gif)
 
