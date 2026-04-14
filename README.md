@@ -2,6 +2,8 @@ Here's a modern **Car Rental Website** built using React. This project allows us
 
 **⭐Project Link:-** https://DRAGOROD.github.io/Car-Rental-Website-Prototype/
 
+![image alt](https://github.com/DRAGOROD/Car-Rental-Website-Demo/blob/870ec8b2452ad1a0a7d3d31d5076d9ab36543e35/Car%20Rental%20Website%20GIF.gif)
+
 ## 🛠️ Tools & Technologies Used
 - React
 - Vite 
